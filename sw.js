@@ -1,4 +1,4 @@
-/* LBL Coach PWA 55.7.3 — no caching of user data or application HTML. */
+/* LBL Coach PWA 55-7-4 — no caching of user data or application HTML. */
 const CACHE='lbl-coach-pwa-assets-v1';
 const ASSETS=['./icon.svg','./icon-192.png','./icon-512.png'];
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(ASSETS)).then(()=>self.skipWaiting()));});

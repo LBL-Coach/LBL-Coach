@@ -1,9 +1,7 @@
-LBL Coach PWA Alpha 55.7.3
-
-1. Ouvrir https://github.com/LBL-Coach/LBL-Coach
-2. Add file > Upload files
-3. Extraire le ZIP et envoyer les 5 fichiers a la racine du depot (index.html, manifest.webmanifest, icon.svg, icon-192.png, icon-512.png, sw.js) : 6 fichiers.
-4. Commit changes; attendre Pages build and deployment vert.
-5. Sur Android Chrome, ouvrir https://lbl-coach.github.io/LBL-Coach/ et choisir Installer l application.
-
-Important: PWA necessite une connexion internet pour fonctionner. Ne pas supprimer les donnees du navigateur. Les donnees locales de l ancien fichier HTML ne sont pas migrees.
+LBL Coach PWA Alpha 55.7.4
+1. Déployer les 6 fichiers à la racine du dépôt GitHub Pages.
+2. Dans Statistiques, ouvrir « Récupérer les compositions », sélectionner la sauvegarde JSON, puis confirmer.
+3. Recharger les statistiques.
+4. Tester le Live Direct sur une rencontre non terminée.
+Attention : Supabase doit disposer des politiques RLS nécessaires et de la fonction RPC lbl42_update_score pour publier les scores.
+La récupération ne modifie ni les rencontres ni Supabase.
